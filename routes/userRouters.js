@@ -15,11 +15,7 @@ router.get("/getUser", authMiddlewere, userController);
 
 router.patch("/updateUser", authMiddlewere, updateUserController);
 
-router.patch(
-  "/updateUserPassword",
-  authMiddlewere,
-  updateUserPasswordController
-);
+router.patch(  "/updateUserPassword",  authMiddlewere,  updateUserPasswordController );
 
 router.patch("/resetPassword", authMiddlewere, resetPasswordController);
 

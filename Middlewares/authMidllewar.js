@@ -20,12 +20,14 @@ const authMiddlewere = async (req, res, next) => {
           message: "Un-Authorize User",
         });
       } else {
+
         if (!req.body) {
           req.body = {};
         }
         req.body.id = decode.id;
     
         next();
+        
       }
     });
   } catch (error) {
