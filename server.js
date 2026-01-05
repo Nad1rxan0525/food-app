@@ -25,6 +25,7 @@ app.use(morgan("dev"));
 app.use("/api/v1/auth", require("./routes/authRouters"))
 app.use("/api/v1/user", require("./routes/userRouters"))
 app.use("/api/v1/resturant", require('./routes/resturandRouter'))
+app.use("/api/v1/category", require("./routes/categoryRoutes"))
 
 
 app.get("/", (req, res) => {
